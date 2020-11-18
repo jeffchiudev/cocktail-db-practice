@@ -1,7 +1,12 @@
 export default class CocktailOrder {
-  static async orderByName(order) {
+  constructor(name, drinkOrder) {
+    this.name = name;
+    this.drinkOrder = drinkOrder;
+  }
+  
+  static async orderByName(drink) {
     try {
-      const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${order}`);
+      const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`);
       if (!response.ok) {
         throw Error(response.statusText);
       }
