@@ -72,7 +72,9 @@ _If there are any issues, I can be contacted at jeffchiudev@gmail.com_
 
 ## Technologies Used:
 
-_{TODOTell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_* Webpack_
+
+_* ES6_
 
 _This extension is licensed under the MIT license._
 Copyright (c) 2020 **_Jeff W. Chiu_** 
