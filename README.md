@@ -1,16 +1,16 @@
-# _{TODOApplication Name}_
+# _CocktailDB Prototype_
 
-#### _{TODOBrief description of application}, {TODODate of current version}_
+#### _This is a prototype version of a cocktail DB project, v1.0, 18.nov.2020_
 
-#### By _**{TODOList of contributors}**_
+#### By _**Jeff Chiu & Tawnee Harris*_
 
 ## Description:
 
-_{TODOThis is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a proof of concept project to see how a cocktail database page might look.  User should be able to search for a drink based on name and have a result returned._
 
 ## Site link
 
-_[Click here](https://jeffchiudev.github.io/TODOexample-repo/) to visit the site._
+_[Click here](https://github.com/jeffchiudev/cocktail-db-practice) to visit the site._
 
 
 ## Setup/Installation Requirements:
@@ -24,27 +24,39 @@ _2. A code editor like VSCode or Atom to view or edit the codebase._
 
 ### Open by downloading:
 
-_1. Download [this](https://github.com/jeffchiudev/example-repo) repository onto your computer by clicking the 'clone or download button'._
+_1. Download [this](https://github.com/jeffchiudev/cocktail-db-practice) repository onto your computer by clicking the 'clone or download button'._
 
 _2. This page utilizes Node package manager and requires local files to be installed. Once you've cloned the repository and it's accompanying config files, use the following command `npm install` to install the necessary NPM files to display correctly._
 
-_3. Double click index.html to open it in your web browser._
+_3. Type `npm run build` to compile the page into the distribution directory with a new index.html and new bundle.js file.._
+
+_4. Type `npm run start` to begin a live server to view the page._
 
 ### Open via Bash/GitBash:
 
 _1. Open terminal window and navigate to/create desired repository location._
 
 _2. Clone this repository onto your computer by using command:_
-`git clone https://github.com/jeffchiudev/TODOexample-repo`
+`git clone https://github.com/jeffchiudev/cocktail-db-practice`
 
 _3. In the directory where you've cloned the repository, open in Visual Studio Code with `code .` or preferred text editor._
 
 ## Testing Specifications:
 
-<details><summary>Click Here</summary>
+<details><summary>Click here to see testing specifications:</summary>
 <p>
 
 | Description | Input | Ouput |
+| :---------- | :---- | :---- |
+| Cocktail |||
+| should correctly take name of user | "Jeff" | Order1.name = "jeff" |
+| Cocktail.prototype.order |||
+| should correctly take in an order from a form entry | "martini" | order1.drink = martini |
+| should correctly return a response if no such drink exists | "galactic pan garble blaster" | order1.drink = no such drink exists |
+| Cocktail.prototype.ingredient |||
+| should correctly search for a drink based on ingredient | "rum" | order1.drink = pina colada |
+| should correctly return a response if no such ingredient exists | "slurm" | order1.drink = no such ingredient |
+
 
 </p>
 </details>
