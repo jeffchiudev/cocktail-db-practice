@@ -11,7 +11,9 @@ import CocktailOrder from './cocktail-service.js';
 
 function getOrderByName(response) { //e.g. margarita, martini
   if (response.drinks) { //name of drink, ingredients, measurements, instructions thumbnail
-    $('.showName').html(`${response.drinks[0].strDrink}`);
+    $('.showDrink').html(`<p>Name: ${response.drinks[0].strDrink}</p><p>Instructions: ${response.drinks[0].strInstructions}</p>`);
+    $('.showIngredients').html(`<ul>Ingredients: ${response.drinks[0].strIngredient1} </ul>`);
+    $('.showMeasure').html(`<ul>Measure: ${response.drinks[0].strMeasure1}</ul>`);
   }
 }
 

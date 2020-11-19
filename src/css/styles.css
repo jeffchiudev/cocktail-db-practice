@@ -1,3 +1,13 @@
 body {
-  background-color: TODO;
+  background-color: lemonchiffon;
+}
+
+h3 {
+  font-family: georgia;
+  text-align: center;
+}
+
+.drinkLabel {
+  font-family: georgia;
+  font-style: italic;
 }
